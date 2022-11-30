@@ -1,0 +1,520 @@
+/*=============================================
+ESCRITORIO (XL revisamos en 1366px en adelante)
+=============================================*/
+
+*{
+    font-family: 'Open Sans', sans-serif;
+      
+
+}
+
+ul, li{
+	list-style:none;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active{
+	list-style:none;
+	text-decoration: none;
+}
+
+/*=============================================
+                  HEADER
+=============================================*/
+
+.banderaarg{
+    display: flexbox;
+    width: 25%;
+    
+}
+
+.banderaing{
+  width: 25%;
+}
+
+.banderas img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #f7f7f7;
+    filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+    cursor: pointer;
+  }
+
+  .banderas:hover {
+    transform: translateY(25px);
+    transition: 2s ease;
+ }
+
+ .banderas:not(:first-child) img {
+    margin-left: -20px;
+  }
+
+  .banderas .idioma {
+    
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 15px 30px;
+    border-radius: 100px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .banderas .idioma::before {
+    content: "";
+    width: 15px; height: 15px;
+    background-color: #10996d;
+    top: 0; 
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .banderas img:hover + .idioma {
+    opacity: 1;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+  }
+
+  .banderas .idioma1 {
+    
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 15px 30px;
+    border-radius: 100px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .banderas .idioma1::before {
+    content: "";
+    width: 15px; height: 15px;
+    background-color: #10996d;
+    top: 0; 
+    transform: translate(+50%, 650%) rotate(45deg);
+  }
+  
+  .banderas img:hover + .idioma1 {
+    opacity: 1;
+    transform: translateX(+50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+  }
+
+body{
+   margin: 0;
+   padding: 0;
+   display: flex;
+   min-height: 100vh;
+   flex-wrap: wrap;
+
+
+
+}
+
+footer{
+   align-self: flex-end;
+   width: 100%;
+
+}
+
+
+  .mediosdepago{
+ margin-top: 20px;
+}
+
+.imagenpagos{
+  width: 65%;
+}
+
+h6{
+   margin-right: 20px;
+
+}
+
+.redes ul li i{
+	width:35px;
+	line-height: 35px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.redes ul li i.fa-facebook-f{
+	background: #1475E0;
+}
+
+.redes ul li i.fa-instagram{
+	background: #F73D62;
+}
+
+.esconderdesayuno{
+  display: none;
+}
+
+.mostrardesayuno{
+  display: block;
+
+}
+
+.desayunos{
+  cursor: pointer;
+}
+
+.esconderroom{
+  display: none;
+}
+
+.mostrarroom{
+  display: block;
+
+}
+
+.roomservice{
+  cursor: pointer;
+}
+
+.quincho{
+  cursor: pointer;
+}
+
+.esconderquincho{
+  display: none;
+}
+
+.mostrarquincho{ 
+  display: block;
+}
+
+.panambi{
+  cursor: pointer;
+}
+
+.esconderpanambi{
+  display: none;
+}
+
+.mostrarpanambi{ 
+  display: block;
+}
+
+.bebidas{
+  cursor: pointer;
+}
+
+.esconderbebidas{
+  display: none;
+}
+
+.mostrarbebidas{ 
+  display: block;
+}
+
+.botanicab{
+  cursor: pointer;
+}
+
+.esconderbotanica{
+  display: none;
+}
+
+.mostrarbotanica{ 
+  display: block;
+}
+
+.entrada p1{
+  font-size: 50px;
+  font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+}
+
+.entrada p{
+  font-size: 30px;
+  font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+  color: black;
+ margin: 0;
+}
+
+.entradapanambi p1{
+  font-size: 50px;
+  font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+}
+
+.entradapanambi p{
+  font-size: 30px;
+  font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+  color: green;
+ margin: 0;
+}
+
+/*=============================================
+TABLET HORIZONTAL (LG revisamos en 1024px)
+=============================================*/
+@media (max-width:1199px) and (min-width:992px){
+
+	
+
+
+}
+
+/*=============================================
+TABLET VERTICAL (MD revisamos en 768px)
+=============================================*/
+@media (max-width:991px) and (min-width:768px){
+
+  .banderaarg{
+    width: 45%;
+    
+  }
+
+  .banderaing{
+    width: 45%;
+  }
+
+  .elpueblito{
+    width: 85%;
+    
+  }
+
+  .botanica{
+    width: 85%;
+  }
+
+
+  .entrada p1{
+    font-size: 30px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+  }
+  
+  .entrada p{
+    font-size: 20px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+   margin: 0;
+  }
+  
+  .entradapanambi p1{
+    font-size: 30px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+  }
+  
+  .entradapanambi p{
+    font-size: 20px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+   margin: 0;
+  }
+
+
+
+	
+}
+
+/*=============================================
+MÓVIL HORIZONTAL (SM revisamos en 576px)
+=============================================*/
+@media (max-width:767px) and (min-width:576px){
+  .banderaarg{
+    width: 45%;
+    
+  }
+
+  .banderaing{
+    width: 45%;
+  }
+
+  .elpueblito{
+    width: 100%;
+    
+  }
+
+  .botanica{
+    width: 100%;
+  }
+
+  .banderas .idioma {
+    
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 15px 30px;
+    border-radius: 100px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .banderas .idioma::before {
+    content: "";
+    width: 15px; height: 15px;
+    background-color: #10996d;
+    top: 0; 
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .banderas img:hover + .idioma {
+    opacity: 0;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+  }
+
+  .banderas .idioma1 {
+    
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 15px 30px;
+    border-radius: 100px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .banderas .idioma1::before {
+    content: "";
+    width: 15px; height: 15px;
+    background-color: #10996d;
+    top: 0; 
+    transform: translate(+50%, 650%) rotate(45deg);
+  }
+  
+  .banderas img:hover + .idioma1 {
+    opacity: 0;
+    transform: translateX(+50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+  }
+  .entrada p1{
+    font-size: 25px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+  }
+  
+  .entrada p{
+    font-size: 15px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+   margin: 0;
+  }
+	
+  .entradapanambi p1{
+    font-size: 25px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+  }
+  
+  .entradapanambi p{
+    font-size: 15px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+   margin: 0;
+  }
+}
+
+/*=============================================
+MOVIL VERTICAL (revisamos en 320px)
+=============================================*/
+@media (max-width:575px){
+
+  .banderaarg{
+    width: 65%;
+    
+  }
+
+  .banderaing{
+    width: 65%;
+  }
+  .restaurantes{
+    margin-top: 0;
+  }
+
+  .elpueblito{
+    width: 125%;
+    margin: auto;
+    
+  }
+
+  .botanica{
+    width: 125%;
+    margin: auto;
+    
+  }
+  .banderas .idioma {
+    
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 5px 10px;
+    border-radius: 33px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 6px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .banderas .idioma::before {
+    content: "";
+    width: 5px; height: 5px;
+    background-color: #10996d;
+    top: 0; 
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  
+  .banderas img:hover + .idioma {
+    opacity: 0;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+  }
+
+  .banderas .idioma1 {
+    
+    background-color: #10996d;
+    color: #fff;
+    font-family: "Bebas Neue", cursive;
+    padding: 5px 10px;
+    border-radius: 33px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-size: 6px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .banderas .idioma1::before {
+    content: "";
+    width: 5px; height: 5px;
+    background-color: #10996d;
+    top: 0; 
+    transform: translate(50%, 50%) rotate(-45deg);
+  }
+  
+  .banderas img:hover + .idioma1 {
+    opacity: 0;
+    transform: translateY(50%);
+    box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+   }
+
+   .imagenpagos{
+    width: 110%; 
+   }
+   .entrada p1{
+    font-size: 25px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+  }
+  
+  .entrada p{
+    font-size: 15px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+   margin: 0;
+  }
+
+  .entradapanambi p1{
+    font-size: 25px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+  }
+  
+  .entradapanambi p{
+    font-size: 15px;
+    font-family: 'Nerko One', Arial, Helvetica, sans-serif;
+   margin: 0;
+  }
+	}
